@@ -12,6 +12,14 @@ def contato():
 def usuarios(nome_usuario):
     return  render_template("usuarios.html" , nome_usuario=nome_usuario)    
 
+@app.route("/login")
+def login():
+    return  render_template("login.html")   
+
+@app.route("/catalogo")
+def catalogo():
+    return  render_template("catalogo.html")
+
 if  __name__    ==  "__main__":
 
         app.run(debug=True)
