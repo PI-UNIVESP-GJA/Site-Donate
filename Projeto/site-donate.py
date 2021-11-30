@@ -1,5 +1,15 @@
 from flask import Flask, render_template
+from app import app
 app = Flask(__name__)
+
+#@app.route('/register', methods=['GET', 'post'])
+#def register():
+#    return render_template('register.html')
+
+#@app.route('/login', methods=['GET', 'post'])
+#def login():
+#    return render_template('login.html')
+
 @app.route("/")
 def homepage():
     return render_template("homepage.html")
